@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bg-cont {
+  background-color: #eef4f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #334155;
+  border-bottom: 2px solid #52bbf0;
+}
+.list-cont {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item {
+  background-color: #ffffff;
+  width: 45vw;
+  margin: 20px;
+  border-radius: 5px;
+}
+.img {
+  width: 100%;
+  height: 200px;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.name {
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #334155;
+}
+.desc {
+  font-size: 20px;
+  font-family: 'Roboto';
+
+  color: #64748b;
+}
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 10px;
+  }
+  .desc {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .item {
+    width: 70vw;
+  }
+}
